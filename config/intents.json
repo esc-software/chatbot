@@ -1,0 +1,935 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "oi",
+        "olá",
+        "e aí",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+        "fala aí",
+        "opa",
+        "salve",
+        "iae"
+      ],
+      "patterns_en": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "whats up",
+        "sup"
+      ],
+      "responses": {
+        "pt": [
+          "Olá! Como posso ajudar hoje?",
+          "Oi! Estou aqui para te auxiliar.",
+          "Fala! Como posso te ajudar?",
+          "Opa! Em que posso ser útil?"
+        ],
+        "en": [
+          "Hello! How can I help you today?",
+          "Hi! I'm here to assist you.",
+          "Hey! What can I do for you?"
+        ]
+      }
+    },
+    {
+      "tag": "boas_vindas",
+      "patterns": [
+        "quem é você",
+        "o que você faz",
+        "o que é isso",
+        "me apresenta",
+        "quem é a esc",
+        "o que é esc"
+      ],
+      "patterns_en": [
+        "who are you",
+        "what do you do",
+        "what is this",
+        "introduce yourself",
+        "tell me about yourself"
+      ],
+      "responses": {
+        "pt": [
+          "Sou um assistente técnico para dúvidas e suporte sobre sistemas, desenvolvimento e segurança.",
+          "Sou o assistente virtual da ESC, aqui para ajudar com tecnologia, desenvolvimento e suporte.",
+          "Sou o chatbot da ESC Software. Posso ajudar com informações sobre a empresa, serviços e suporte tecnico."
+        ],
+        "en": [
+          "I'm a technical assistant for questions and support about systems, development and security.",
+          "I'm the ESC virtual assistant, here to help with technology, development and support.",
+          "I'm the ESC Software chatbot. I can help with company info, services and technical support."
+        ]
+      }
+    },
+    {
+      "tag": "educacao_resposta",
+      "patterns": [
+        "responda educado",
+        "seja educado",
+        "fala direito",
+        "responda direito",
+        "seja mais educado"
+      ],
+      "patterns_en": [
+        "be polite",
+        "be nice",
+        "talk properly",
+        "be respectful"
+      ],
+      "responses": {
+        "pt": [
+          "Claro, vou manter um tom claro, educado e objetivo.",
+          "Entendido, serei educado e direto."
+        ],
+        "en": [
+          "Sure, I'll keep a clear, polite and objective tone.",
+          "Understood, I'll be polite and straightforward."
+        ]
+      }
+    },
+    {
+      "tag": "ajuda_geral",
+      "patterns": [
+        "preciso de ajuda",
+        "me ajuda",
+        "não sei o que fazer",
+        "socorro",
+        "me ajude",
+        "preciso de suporte"
+      ],
+      "patterns_en": [
+        "i need help",
+        "help me",
+        "i don't know what to do",
+        "i need support",
+        "can you help me"
+      ],
+      "responses": {
+        "pt": [
+          "Claro! Me descreva o problema com detalhes para eu te ajudar melhor.",
+          "Pode descrever o que aconteceu? Vou fazer o possivel para ajudar.",
+          "Estou aqui para ajudar. Me diga qual o problema."
+        ],
+        "en": [
+          "Describe the problem in detail so I can help you better.",
+          "Can you describe what happened? I'll do my best to help.",
+          "I'm here to help. Tell me what the problem is."
+        ]
+      }
+    },
+    {
+      "tag": "encerramento",
+      "patterns": [
+        "tchau",
+        "até mais",
+        "encerrar",
+        "finalizar",
+        "até logo",
+        "valeu",
+        "obrigado"
+      ],
+      "patterns_en": [
+        "bye",
+        "see you",
+        "goodbye",
+        "end",
+        "see you later",
+        "thanks",
+        "thank you"
+      ],
+      "responses": {
+        "pt": [
+          "Tudo certo. Se precisar, estarei disponivel.",
+          "Fico a disposicao. Qualquer duvida, e so chamar.",
+          "Disponha! Estarei aqui se precisar de ajuda."
+        ],
+        "en": [
+          "All set. I'll be here if you need me.",
+          "Anytime! Feel free to reach out if you need anything else.",
+          "You're welcome! I'm here if you need further assistance."
+        ]
+      }
+    },
+    {
+      "tag": "confirmacao",
+      "patterns": [
+        "entendi",
+        "ok",
+        "certo",
+        "beleza",
+        "perfeito",
+        "entendido",
+        "combinado"
+      ],
+      "patterns_en": [
+        "understood",
+        "ok",
+        "got it",
+        "i see",
+        "perfect",
+        "agreed"
+      ],
+      "responses": {
+        "pt": [
+          "Perfeito. Se precisar de algo mais, so chamar.",
+          "Ok! Qualquer coisa, estou aqui.",
+          "Legal! Se surgir mais duvidas, e so perguntar."
+        ],
+        "en": [
+          "Perfect. Let me know if you need anything else.",
+          "Great! I'm here if you have more questions.",
+          "Awesome! Feel free to ask if anything else comes up."
+        ]
+      }
+    },
+    {
+      "tag": "erro_entendimento",
+      "patterns": [
+        "não entendeu",
+        "não foi isso",
+        "resposta errada",
+        "não é isso",
+        "entendeu errado"
+      ],
+      "patterns_en": [
+        "you didn't understand",
+        "thats not it",
+        "wrong answer",
+        "that is not what i meant"
+      ],
+      "responses": {
+        "pt": [
+          "Peço desculpas. Pode reformular sua pergunta?",
+          "Desculpe, nao entendi direito. Pode explicar de outra forma?"
+        ],
+        "en": [
+          "I apologize. Could you rephrase your question?",
+          "Sorry, I didn't quite get that. Can you explain it differently?"
+        ]
+      }
+    },
+    {
+      "tag": "status_sistema",
+      "patterns": [
+        "status",
+        "está online",
+        "funcionando?",
+        "tá no ar",
+        "sistema está operacional"
+      ],
+      "patterns_en": [
+        "status",
+        "are you online",
+        "is it working",
+        "system status"
+      ],
+      "responses": {
+        "pt": [
+          "Sim, o sistema esta operacional.",
+          "Estou online e funcionando normalmente.",
+          "Tudo operacional por aqui."
+        ],
+        "en": [
+          "Yes, the system is operational.",
+          "I'm online and working normally.",
+          "All systems operational."
+        ]
+      }
+    },
+    {
+      "tag": "informacao_assistente",
+      "patterns": [
+        "o que você sabe",
+        "suas capacidades",
+        "o que pode fazer",
+        "quais seus conhecimentos",
+        "do que é capaz"
+      ],
+      "patterns_en": [
+        "what do you know",
+        "your capabilities",
+        "what can you do",
+        "what are you capable of"
+      ],
+      "responses": {
+        "pt": [
+          "Posso ajudar com desenvolvimento, arquitetura, APIs, seguranca e sistemas.",
+          "Tenho conhecimento em desenvolvimento web e mobile, APIs, infraestrutura, seguranca e banco de dados.",
+          "Sei sobre desenvolvimento de software, desde o frontend ate o backend, passando por devops e seguranca."
+        ],
+        "en": [
+          "I can help with development, architecture, APIs, security and systems.",
+          "I have knowledge in web and mobile development, APIs, infrastructure, security and databases.",
+          "I know about software development from frontend to backend, including devops and security."
+        ]
+      }
+    },
+    {
+      "tag": "clareza",
+      "patterns": [
+        "explica melhor",
+        "não entendi",
+        "nao entendi",
+        "pode detalhar",
+        "mais detalhes"
+      ],
+      "patterns_en": [
+        "explain better",
+        "i didn't understand",
+        "can you elaborate",
+        "more details"
+      ],
+      "responses": {
+        "pt": [
+          "Claro! Posso detalhar mais se quiser.",
+          "Vou tentar ser mais claro. Qual parte voce gostaria de entender melhor?"
+        ],
+        "en": [
+          "Sure! I can go into more detail if you'd like.",
+          "Let me try to be clearer. Which part would you like to understand better?"
+        ]
+      }
+    },
+    {
+      "tag": "stack_tecnologias",
+      "patterns": [
+        "quais linguagens usam",
+        "stack",
+        "tecnologias",
+        "stacks",
+        "o que usam",
+        "quais ferramentas"
+      ],
+      "patterns_en": [
+        "what languages do you use",
+        "tech stack",
+        "technologies",
+        "what tools do you use"
+      ],
+      "responses": {
+        "pt": [
+          "Trabalhamos com JavaScript, TypeScript, Python, Go, C++, C#, Rust, Ruby e outras.",
+          "Nossa stack principal inclui React, Node.js, Python, Go, containers Docker e cloud.",
+          "Usamos tecnologias modernas: React, TypeScript, Node.js, Python, Go, Docker, Kubernetes e cloud."
+        ],
+        "en": [
+          "We work with JavaScript, TypeScript, Python, Go, C++, C#, Rust, Ruby and others.",
+          "Our main stack includes React, Node.js, Python, Go, Docker containers and cloud.",
+          "We use modern technologies: React, TypeScript, Node.js, Python, Go, Docker, Kubernetes and cloud."
+        ]
+      }
+    },
+    {
+      "tag": "web_dev",
+      "patterns": [
+        "faz site",
+        "desenvolvimento web",
+        "frontend backend",
+        "criar site",
+        "desenvolver site",
+        "sistema web"
+      ],
+      "patterns_en": [
+        "do you build websites",
+        "web development",
+        "frontend backend",
+        "create a website",
+        "web system"
+      ],
+      "responses": {
+        "pt": [
+          "Sim, desenvolvemos sistemas web completos com frontend e backend escalavel.",
+          "Criamos desde landing pages ate sistemas web complexos com React, Node.js e bancos de dados.",
+          "Desenvolvemos aplicacoes web responsivas, seguras e de alta performance."
+        ],
+        "en": [
+          "Yes, we build complete web systems with scalable frontend and backend.",
+          "We create everything from landing pages to complex web systems with React, Node.js and databases.",
+          "We develop responsive, secure, high-performance web applications."
+        ]
+      }
+    },
+    {
+      "tag": "backend",
+      "patterns": [
+        "backend",
+        "api",
+        "servidor",
+        "desenvolvimento backend",
+        "api rest"
+      ],
+      "patterns_en": [
+        "backend",
+        "api",
+        "server",
+        "backend development",
+        "rest api"
+      ],
+      "responses": {
+        "pt": [
+          "Criamos APIs robustas, seguras e escalaveis.",
+          "Desenvolvemos servidores e APIs em Node.js, Python e Go com arquitetura moderna.",
+          "Construimos backends escalaveis usando as melhores praticas do mercado."
+        ],
+        "en": [
+          "We build robust, secure and scalable APIs.",
+          "We develop servers and APIs in Node.js, Python and Go with modern architecture.",
+          "We build scalable backends using industry best practices."
+        ]
+      }
+    },
+    {
+      "tag": "frontend",
+      "patterns": [
+        "frontend",
+        "interface",
+        "ui",
+        "desenvolvimento frontend",
+        "interface de usuario"
+      ],
+      "patterns_en": [
+        "frontend",
+        "interface",
+        "ui",
+        "frontend development",
+        "user interface"
+      ],
+      "responses": {
+        "pt": [
+          "Desenvolvemos interfaces modernas e performaticas.",
+          "Criamos UIs responsivas com React, TypeScript e Tailwind.",
+          "Fazemos frontends que combinam design moderno com performance."
+        ],
+        "en": [
+          "We develop modern and performant interfaces.",
+          "We build responsive UIs with React, TypeScript and Tailwind.",
+          "We create frontends that combine modern design with performance."
+        ]
+      }
+    },
+    {
+      "tag": "mobile_dev",
+      "patterns": [
+        "aplicativo",
+        "app mobile",
+        "desenvolvimento mobile",
+        "react native",
+        "flutter",
+        "ios android",
+        "criar app",
+        "mobile"
+      ],
+      "patterns_en": [
+        "mobile app",
+        "mobile development",
+        "react native",
+        "flutter",
+        "ios android",
+        "create an app",
+        "mobile application"
+      ],
+      "responses": {
+        "pt": [
+          "Criamos aplicativos mobile nativos e hibridos com React Native e Flutter.",
+          "Desenvolvemos apps para iOS e Android com performance e qualidade.",
+          "Trabalhamos com React Native e Flutter para criar apps modernos e escalaveis."
+        ],
+        "en": [
+          "We build native and hybrid mobile apps with React Native and Flutter.",
+          "We develop iOS and Android apps with performance and quality.",
+          "We work with React Native and Flutter to create modern, scalable apps."
+        ]
+      }
+    },
+    {
+      "tag": "banco_dados",
+      "patterns": [
+        "banco de dados",
+        "banco dados",
+        "database",
+        "sql",
+        "nosql",
+        "postgresql",
+        "mongodb",
+        "mysql",
+        "qual banco de dados"
+      ],
+      "patterns_en": [
+        "database",
+        "sql",
+        "nosql",
+        "postgresql",
+        "mongodb",
+        "mysql",
+        "which database"
+      ],
+      "responses": {
+        "pt": [
+          "Trabalhamos com bancos SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis).",
+          "Usamos PostgreSQL como banco principal e MongoDB para casos especificos.",
+          "Temos experiencia com modelagem e otimizacao de bancos de dados relacionais e nao relacionais."
+        ],
+        "en": [
+          "We work with SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) databases.",
+          "We use PostgreSQL as our main database and MongoDB for specific use cases.",
+          "We have experience with modeling and optimization of relational and non-relational databases."
+        ]
+      }
+    },
+    {
+      "tag": "cloud_devops",
+      "patterns": [
+        "cloud",
+        "nuvem",
+        "aws",
+        "azure",
+        "google cloud",
+        "devops",
+        "infraestrutura",
+        "servidor cloud",
+        "deploy automatico"
+      ],
+      "patterns_en": [
+        "cloud",
+        "aws",
+        "azure",
+        "google cloud",
+        "devops",
+        "infrastructure",
+        "cloud server",
+        "automated deploy"
+      ],
+      "responses": {
+        "pt": [
+          "Trabalhamos com AWS, Google Cloud e Azure para infraestrutura escalavel.",
+          "Fazemos devops completo: CI/CD, Docker, Kubernetes e infraestrutura como codigo.",
+          "Cuidamos de todo o ciclo de devops: pipelines automatizadas, containers e orquestracao."
+        ],
+        "en": [
+          "We work with AWS, Google Cloud and Azure for scalable infrastructure.",
+          "We do full devops: CI/CD, Docker, Kubernetes and infrastructure as code.",
+          "We handle the entire devops cycle: automated pipelines, containers and orchestration."
+        ]
+      }
+    },
+    {
+      "tag": "ia_ml",
+      "patterns": [
+        "inteligencia artificial",
+        "ia",
+        "machine learning",
+        "aprendizado de maquina",
+        "ia chatbot",
+        "automacao inteligente"
+      ],
+      "patterns_en": [
+        "artificial intelligence",
+        "ai",
+        "machine learning",
+        "ml",
+        "ai chatbot",
+        "intelligent automation"
+      ],
+      "responses": {
+        "pt": [
+          "Integramos IA e machine learning em sistemas usando modelos modernos e APIs.",
+          "Trabalhamos com automacao inteligente, chatbots e processamento de linguagem natural.",
+          "Implementamos solucoes de IA praticas: chatbots, recomendacao, analise de dados e automacao."
+        ],
+        "en": [
+          "We integrate AI and machine learning into systems using modern models and APIs.",
+          "We work with intelligent automation, chatbots and natural language processing.",
+          "We implement practical AI solutions: chatbots, recommendation, data analysis and automation."
+        ]
+      }
+    },
+    {
+      "tag": "seguranca_dev",
+      "patterns": [
+        "segurança de código",
+        "segurança",
+        "seguranca",
+        "codigo seguro",
+        "protecao de dados",
+        "lgpd"
+      ],
+      "patterns_en": [
+        "code security",
+        "security",
+        "secure code",
+        "data protection",
+        "cybersecurity"
+      ],
+      "responses": {
+        "pt": [
+          "Aplicamos boas praticas de seguranca e validacao de entrada.",
+          "Seguimos principios de secure development e protecao contra OWASP Top 10.",
+          "Implementamos criptografia, autenticacao segura e protecao contra vulnerabilidades."
+        ],
+        "en": [
+          "We apply security best practices and input validation.",
+          "We follow secure development principles and OWASP Top 10 protection.",
+          "We implement encryption, secure authentication and vulnerability protection."
+        ]
+      }
+    },
+    {
+      "tag": "bugbounty",
+      "patterns": [
+        "bug bounty",
+        "segurança site",
+        "vulnerabilidade",
+        "reportar bug",
+        "reportar vulnerabilidade"
+      ],
+      "patterns_en": [
+        "bug bounty",
+        "website security",
+        "vulnerability",
+        "report bug",
+        "report vulnerability"
+      ],
+      "responses": {
+        "pt": [
+          "Você pode acessar nosso programa de seguranca em https://security.esc-software.com/",
+          "Nosso bug bounty esta disponivel em security.esc-software.com - fique a vontade para reportar."
+        ],
+        "en": [
+          "You can access our security program at https://security.esc-software.com/",
+          "Our bug bounty program is at security.esc-software.com - feel free to report."
+        ]
+      }
+    },
+    {
+      "tag": "docker",
+      "patterns": [
+        "docker",
+        "container",
+        "docker compose",
+        "conteinerizacao"
+      ],
+      "patterns_en": [
+        "docker",
+        "container",
+        "docker compose",
+        "containerization"
+      ],
+      "responses": {
+        "pt": [
+          "Usamos Docker para padronizacao de ambientes.",
+          "Trabalhamos com conteinerizacao usando Docker e Docker Compose.",
+          "Docker e essencial no nosso fluxo: ambientes identicos do dev a producao."
+        ],
+        "en": [
+          "We use Docker for environment standardization.",
+          "We work with containerization using Docker and Docker Compose.",
+          "Docker is essential in our workflow: identical environments from dev to production."
+        ]
+      }
+    },
+    {
+      "tag": "deploy",
+      "patterns": [
+        "deploy",
+        "publicar sistema",
+        "colocar no ar",
+        "publicar aplicacao",
+        "implantar sistema"
+      ],
+      "patterns_en": [
+        "deploy",
+        "publish system",
+        "go live",
+        "publish application",
+        "deploy application"
+      ],
+      "responses": {
+        "pt": [
+          "Usamos containers e pipelines automatizados para deploy continuo.",
+          "Fazemos deploy automatizado com GitHub Actions e Docker.",
+          "O deploy e totalmente automatizado: git push ja publica a aplicacao."
+        ],
+        "en": [
+          "We use containers and automated pipelines for continuous deployment.",
+          "We do automated deploy with GitHub Actions and Docker.",
+          "Deploy is fully automated: git push publishes the application."
+        ]
+      }
+    },
+    {
+      "tag": "testes_qa",
+      "patterns": [
+        "testes",
+        "qa",
+        "qualidade",
+        "teste automatizado",
+        "teste de software",
+        "garantia de qualidade"
+      ],
+      "patterns_en": [
+        "testing",
+        "qa",
+        "quality",
+        "automated testing",
+        "software testing",
+        "quality assurance"
+      ],
+      "responses": {
+        "pt": [
+          "Fazemos testes automatizados: unitarios, integracao e e2e.",
+          "Aplicamos QA em todo o ciclo de desenvolvimento com CI e testes automatizados.",
+          "Garantimos qualidade com testes unitarios, de integracao e revisao de codigo."
+        ],
+        "en": [
+          "We do automated testing: unit, integration and e2e.",
+          "We apply QA throughout the development cycle with CI and automated tests.",
+          "We ensure quality with unit tests, integration tests and code review."
+        ]
+      }
+    },
+    {
+      "tag": "contato_suporte",
+      "patterns": [
+        "contato suporte",
+        "falar com alguém",
+        "suporte humano",
+        "email suporte",
+        "telefone suporte",
+        "atendimento humano",
+        "falar com atendente"
+      ],
+      "patterns_en": [
+        "contact support",
+        "talk to someone",
+        "human support",
+        "support email",
+        "support phone",
+        "talk to a person"
+      ],
+      "responses": {
+        "pt": [
+          "Você pode entrar em contato pelo e-mail hello@esc-software.com ou pelo telefone +55 11 99303-1311.",
+          "Suporte disponivel via email hello@esc-software.com ou telefone +55 11 99303-1311.",
+          "Para falar com um humano: hello@esc-software.com | +55 11 99303-1311"
+        ],
+        "en": [
+          "You can reach us at hello@esc-software.com or by phone at +55 11 99303-1311.",
+          "Support available via email hello@esc-software.com or phone +55 11 99303-1311.",
+          "To talk to a human: hello@esc-software.com | +55 11 99303-1311"
+        ]
+      }
+    },
+    {
+      "tag": "contato_direto",
+      "patterns": [
+        "email",
+        "telefone",
+        "contato",
+        "como falar com vocês",
+        "como falar com voces",
+        "quero contato"
+      ],
+      "patterns_en": [
+        "email",
+        "phone",
+        "contact",
+        "how to reach you",
+        "i want to contact"
+      ],
+      "responses": {
+        "pt": [
+          "Contato direto: hello@esc-software.com | +55 11 99303-1311",
+          "Email: hello@esc-software.com | Telefone: +55 11 99303-1311"
+        ],
+        "en": [
+          "Direct contact: hello@esc-software.com | +55 11 99303-1311",
+          "Email: hello@esc-software.com | Phone: +55 11 99303-1311"
+        ]
+      }
+    },
+    {
+      "tag": "projetos_metodologia",
+      "patterns": [
+        "como funciona o processo",
+        "metodologia de trabalho",
+        "como voces trabalham",
+        "processo de desenvolvimento",
+        "ciclo de desenvolvimento"
+      ],
+      "patterns_en": [
+        "how does the process work",
+        "work methodology",
+        "how do you work",
+        "development process",
+        "development cycle"
+      ],
+      "responses": {
+        "pt": [
+          "Seguimos metodologias ageis como Scrum e Kanban com entregas incrementais.",
+          "Trabalhamos com ciclos de desenvolvimento iterativos, reunioes semanais e transparencia total.",
+          "Nosso processo: levantamento de requisitos, prototipacao, desenvolvimento, testes e deploy continuo."
+        ],
+        "en": [
+          "We follow agile methodologies like Scrum and Kanban with incremental deliveries.",
+          "We work with iterative development cycles, weekly meetings and full transparency.",
+          "Our process: requirements gathering, prototyping, development, testing and continuous deployment."
+        ]
+      }
+    },
+    {
+      "tag": "consultoria",
+      "patterns": [
+        "consultoria",
+        "consultoria tecnica",
+        "preciso de consultoria",
+        "ajuda tecnica",
+        "orientacao tecnica"
+      ],
+      "patterns_en": [
+        "consulting",
+        "technical consulting",
+        "i need consulting",
+        "technical guidance"
+      ],
+      "responses": {
+        "pt": [
+          "Oferecemos consultoria tecnica em arquitetura, infraestrutura e desenvolvimento.",
+          "Fazemos consultoria para otimizar processos, escolher tecnologias e arquitetar solucoes.",
+          "Nossa consultoria abrange desde revisao de codigo ate definicao de arquitetura de sistemas."
+        ],
+        "en": [
+          "We offer technical consulting in architecture, infrastructure and development.",
+          "We provide consulting to optimize processes, choose technologies and architect solutions.",
+          "Our consulting covers everything from code review to system architecture definition."
+        ]
+      }
+    },
+    {
+      "tag": "manutencao_suporte",
+      "patterns": [
+        "manutencao",
+        "suporte continuo",
+        "contrato de suporte",
+        "manutencao de sistema",
+        "dar manutencao"
+      ],
+      "patterns_en": [
+        "maintenance",
+        "ongoing support",
+        "support contract",
+        "system maintenance"
+      ],
+      "responses": {
+        "pt": [
+          "Oferecemos contratos de manutencao e suporte continuo para sistemas.",
+          "Temos planos de suporte com monitoramento, correcao de bugs e atualizacoes.",
+          "Fazemos manutencao corretiva e evolutiva com SLAs definidos."
+        ],
+        "en": [
+          "We offer maintenance contracts and ongoing support for systems.",
+          "We have support plans with monitoring, bug fixes and updates.",
+          "We provide corrective and evolutionary maintenance with defined SLAs."
+        ]
+      }
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "patterns_en": [],
+      "responses": {
+        "pt": [
+          "Nao consegui entender completamente. Pode reformular?",
+          "Desculpe, nao entendi. Pode tentar de outra forma?",
+          "Nao tenho uma resposta para isso. Pode perguntar de outro jeito?"
+        ],
+        "en": [
+          "I didn't quite understand. Could you rephrase?",
+          "Sorry, I didn't get that. Can you try a different way?",
+          "I don't have an answer for that. Can you ask in a different way?"
+        ]
+      }
+    },
+    {
+      "tag": "detalhe_tecnico",
+      "patterns": [
+        "me explica tecnicamente",
+        "explicacao tecnica",
+        "detalhes tecnicos",
+        "quero saber tecnicamente"
+      ],
+      "patterns_en": [
+        "explain technically",
+        "technical explanation",
+        "technical details",
+        "tell me technically"
+      ],
+      "responses": {
+        "pt": [
+          "Posso explicar com mais profundidade tecnica se quiser.",
+          "Claro! Vou detalhar tecnicamente para voce."
+        ],
+        "en": [
+          "I can explain in more technical depth if you'd like.",
+          "Sure! I'll explain it technically for you."
+        ]
+      }
+    },
+    {
+      "tag": "curiosidade",
+      "patterns": [
+        "como funciona",
+        "como é feito",
+        "como e feito",
+        "como voces fazem",
+        "me explique como"
+      ],
+      "patterns_en": [
+        "how does it work",
+        "how is it made",
+        "how do you do it",
+        "explain how"
+      ],
+      "responses": {
+        "pt": [
+          "Depende do contexto, posso detalhar o sistema.",
+          "Posso explicar como funciona cada etapa do processo."
+        ],
+        "en": [
+          "It depends on the context, I can detail the system.",
+          "I can explain how each step of the process works."
+        ]
+      }
+    },
+    {
+      "tag": "recomendacao",
+      "patterns": [
+        "o que você recomenda",
+        "o que voce recomenda",
+        "qual tecnologia recomenda",
+        "melhor ferramenta"
+      ],
+      "patterns_en": [
+        "what do you recommend",
+        "which technology do you recommend",
+        "best tool"
+      ],
+      "responses": {
+        "pt": [
+          "Depende do objetivo, posso te orientar melhor.",
+          "Recomendo tecnologias modernas e compativeis com seu projeto especifico."
+        ],
+        "en": [
+          "It depends on the goal, I can guide you better.",
+          "I recommend modern technologies compatible with your specific project."
+        ]
+      }
+    }
+  ]
+}

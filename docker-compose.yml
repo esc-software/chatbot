@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  esc-nlp:
+    build: .
+    container_name: esc_nlp_engine
+    ports:
+      - "3006:3006"
+    volumes:
+      - ./logs:/app/logs
+      - ./storage:/app/storage
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
